@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Profile - My Tool</title>
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: #f0f0f0;
+      background-image: url('https://i.ibb.co/DDCHLccd/animefan-animefanart-hunterxhunter-gon-gonfreecs-vintage-retro.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0, 0, 0, 0.7);
+      z-index: -1;
+    }
+
+    .profile-card {
+      background: rgba(30, 30, 30, 0.85);
+      border-radius: 20px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.7);
+      max-width: 400px;
+      width: 100%;
+      padding: 30px;
+      box-sizing: border-box;
+      text-align: center;
+    }
+    .profile-pic {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 3px solid #00ccff;
+      margin-bottom: 20px;
+      object-fit: cover;
+    }
+    h2 {
+      margin-bottom: 10px;
+      color: #00ccff;
+      font-size: 1.8rem;
+    }
+    p {
+      color: #ccc;
+      margin: 5px 0 20px;
+      font-size: 1rem;
+    }
+    .btn {
+      background-color: #00aaff;
+      color: white;
+      border: none;
+      padding: 12px 25px;
+      font-size: 1rem;
+      border-radius: 8px;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 10px;
+      transition: background-color 0.3s ease;
+    }
+    .btn:hover {
+      background-color: #0077cc;
+    }
+
+    /* Responsive for very small screens */
+    @media (max-width: 320px) {
+      .profile-pic {
+        width: 90px;
+        height: 90px;
+      }
+      h2 {
+        font-size: 1.4rem;
+      }
+      p, .btn {
+        font-size: 0.9rem;
+      }
+      .profile-card {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="profile-card">
+    <img src="https://i.ibb.co/Q3FZfCXv/Anime.jpg" alt="Profile Picture" class="profile-pic">
+    <h2>Moa_xiix</h2>
+    <p>Software Enthusiast & Tool Developer</p>
+    <p>Email: <a href="mailto:pablo12ascobar@gmail.com" style="color: #00ccff;">pablo12ascobar@gmail.com</a></p>
+
+    <a href="index.html" class="btn">Back to Home</a>
+  </div>
+
+</body>
+</html>
